@@ -276,6 +276,9 @@ NSDictionary * attributes(io_service_t usbDevice){
 }
 
 
+//Once you get the io_service_t from DADiskCopyIOMedia,
+//you can call this function to get the IOUSBDevice
+//object:
 static io_service_t findUSBDeviceForMedia(io_service_t
                                           media)
 {
